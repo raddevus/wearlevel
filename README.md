@@ -4,7 +4,8 @@ wearlevel project that checks 1) how long OS has been running, 2) how many bytes
 Note: 1) Project created in Visual Studio Code <br/>
 2) built using MinGW on Windows <br/>
 <p>
-Here is a helpful link to getting MinGW set up with VSCode: <a href="https://code.visualstudio.com/docs/languages/cpp">https://code.visualstudio.com/docs/languages/cpp</a>
+Here is a helpful link to getting MinGW set up with VSCode: <a href="https://code.visualstudio.com/docs/languages/cpp">https://code.visualstudio.com/docs/languages/cpp</a><br/>
+That link also contains links to where you can get MinGW.
 </p>
 
 <p>
