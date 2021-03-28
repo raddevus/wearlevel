@@ -3,7 +3,7 @@
 #include <locale>
 #include <sysinfoapi.h>
 
-std::__cxx11::string displayValue(LONGLONG);
+std::string displayValue(LONGLONG);
 void getOsUptime();
 
 int main() { 
@@ -44,7 +44,7 @@ int main() {
     getOsUptime();
 }
 
-std::__cxx11::string displayValue(LONGLONG byteCount){
+std::string displayValue(LONGLONG byteCount){
    auto s = std::to_string(byteCount);
    int n = s.length() - 3;
    while (n > 0) {
