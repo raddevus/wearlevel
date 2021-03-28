@@ -6,8 +6,17 @@
 std::string displayValue(LONGLONG);
 void getOsUptime();
 
-int main() { 
-    HANDLE dev = CreateFile(LPCSTR("\\\\.\\C:"), 
+int main(int argc, char *argv[]) { 
+    std::string targetDrive = "\\\\.\\";
+    if (argc >1){
+        targetDrive.append(argv[1]);
+        targetDrive.append(":");
+        std::cout << targetDrive << std::endl;
+    }
+    else{
+        targetDrive += "C:";
+    }
+    HANDLE dev = CreateFile(targetDrive.c_str(), 
         FILE_READ_ATTRIBUTES, 
         FILE_SHARE_READ | FILE_SHARE_WRITE, 
         NULL, 
